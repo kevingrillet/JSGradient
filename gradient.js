@@ -40,7 +40,7 @@ class Ball {
     this.context.beginPath();
     //this.context.arc(this.x, this.y, this.scr / 2, 0, 2 * Math.PI);
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    var grd = this.context.createRadialGradient(this.x, this.y, this.radius, this.x, this.y, this.scr / 2);
+    var grd = this.context.createRadialGradient(this.x, this.y, this.radius, this.x, this.y, this.scr * .7);
     grd.addColorStop(0, this.color);
     grd.addColorStop(1, this.color2);
     this.context.fillStyle = grd;
